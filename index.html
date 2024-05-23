@@ -65,8 +65,8 @@
             var intelligence = parseInt(document.getElementById("intInput").value) || 0;
             var level = parseInt(document.getElementById("levelInput").value) || 0;
 
-            var totalHealth = health + (level * 100);
-            var totalMP = intelligence + (level * 5);
+            var totalHealth = health * 50 + level * 100;
+            var totalMP = intelligence * 1 + level * 5;
 
             document.getElementById("result").innerHTML = "Total Health: " + totalHealth + " HP<br>Total MP: " + totalMP + " MP";
         }
